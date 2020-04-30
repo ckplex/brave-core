@@ -21,6 +21,7 @@
 #include "bat/ledger/internal/media/media.h"
 #include "bat/ledger/internal/common/time_util.h"
 #include "bat/ledger/internal/publisher/publisher.h"
+#include "bat/ledger/internal/publisher/v4_publisher.h"
 #include "bat/ledger/internal/bat_helper.h"
 #include "bat/ledger/internal/bat_state.h"
 #include "bat/ledger/internal/promotion/promotion.h"
@@ -125,6 +126,9 @@ void LedgerImpl::Initialize(
   }
 
   initializing_ = true;
+
+  // TODO(zenparsing): Mucking about
+  braveledger_v4_publisher::FetchPrefixList(this);
 
   InitializeConfirmations(execute_create_script, callback);
 }

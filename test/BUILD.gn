@@ -341,6 +341,7 @@ test("brave_unit_tests") {
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/bat_helper_unittest.cc",
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/bat_util_unittest.cc",
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/publisher/publisher_unittest.cc",
+      "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/publisher/v4_publisher_unittest.cc",
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/state/ballot_state_unittest.cc",
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/state/client_state_unittest.cc",
       "//brave/vendor/bat-native-ledger/src/bat/ledger/internal/state/current_reconcile_state_unittest.cc",
